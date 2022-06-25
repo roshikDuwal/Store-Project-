@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.sticky{
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+}
+
+
+
+
+
+h2{
+    position: relative;
+    width: 10%;
+    top: 4px;
+    left: 5%;
+    cursor: pointer;
+}
+
+h2:before{
+    content: attr(data-count);
+    width: 28px;
+    position: absolute;
+    top: -10px;
+    left: 22px;
+    font-size: 19px;
+    text-align: center;
+    color: white;
+    height: 24px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+h2.zero:before{
+    opacity: 1;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    transition:0.3s ;
+    
+   
+}
+
+.cart.active{
+    right: 0;
+    max-height:100%;
+    overflow-y: auto;
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    font-size: 30px;
+    right: 0.8rem;
+    color: black;
+    cursor:pointer;
+}
+
+.product-container{
+    padding: 5px;
+    text-align: center;
+    
+}
+
+
+
+
+
+
+.Container{
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px; 
+}
+
+.brand{
+    margin: 5px 3px;
+    border: 2px solid black;
+    
+}
+
+.Clothes{ 
+    margin: 5px 3px;
+}
+
+.Clothes h1{
+    font-family: 'Macondo', cursive;
+}
+
+.clothes_store{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    gap:1.5rem;
+    margin: 5px;
+    text-align: center;
+   
+}
+
+.id{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 250px;
+    margin: 5px;
+    padding:2px;
+    transition: all 1s ease-in-out .1s;
+}
+
+.id:hover{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 250px;
+    margin: 5px;
+    padding:2px;
+    box-shadow: 0 0 20px rgb(60, 59, 59);
+}
+
+.div_image{
+    height: 60%;
+    margin-bottom: 1px;  
+}
+
+img{
+    width:180px;
+    height:200px;
+    background-size: cover;
+}
+
+
+.clothes_title{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+
+.Cart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+
+}
+
+.add-cart{ 
+    background: black;
+    color: white;
+    padding:10px;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color:hsl(249, 32%, 17%) ;
+}
+
+.CAtegory{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    font-family:   Times, serif;
+    font-weight: 600;
+
+}
+
+
+.price{
+    width: 100%;
+    font-size: 15px;
+    color: rgb(217, 79, 5);
+    font-family:   Times, serif;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.rating{
+    width: 100%;
+    font-size: 15px;
+    font-family:   Times, serif;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+button{
+    border: none;
+}
+
+
+/* Add to cART */
+
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: rgb(245, 245, 245);
+}
+
+.addcart_btn{
+    margin-bottom:5px;
+    padding: 5px;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.Del_btn{
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.total{
+    border: 2px solid red;
+    width: 20px;
+    height: 50px;
+}

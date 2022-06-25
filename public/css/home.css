@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.sticky{
+    position: sticky;
+    top: 0;
+    
+  }
+
+.body_section{
+    display: flex;
+    flex-direction: column;
+      
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align:end;
+    height: 80vh; 
+    background-image:url(/Images/home.jpg);
+    background-size: cover;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+.butn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+    color:aliceblue; 
+    background-color: red; 
+    border: none; 
+    font-size: 20px; 
+    font-weight: 700;
+
+}
+
+.center{
+    padding: 15px;
+   
+}
+
+h1{
+    font-size: 70px;
+    font-weight: 10em;
+    font-family: 'Macondo', cursive;
+    
+}
+
+.body_part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    margin: 60px 0px;
+ 
+    flex-wrap: wrap;
+}
+
+.box1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 200px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 5px;
+    height: 100%;
+    background-image: url(/Images/men.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px rgb(69, 68, 67);
+}
+
+
+.box2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 200px;
+    padding: 20px;
+    margin: 5px;
+    height: 100%;
+    box-shadow: 0 0 20px rgb(69, 68, 67);
+    background-image: url(/Images/accesories.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px rgb(69, 68, 67);
+    
+}
+
+
+
+.box3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 200px;
+    padding: 20px;
+    margin: 5px;
+    height: 100%;
+    background-image: url(/Images/women.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 20px rgb(69, 68, 67);
+}
+
+.box_class{
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 2px;
+    
+}
+
+.box_class:hover{
+    background-color: rgb(211, 211, 211);
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1879px) {
+    h1{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Macondo', cursive;
+        
+    }
+  }
+
+  
+@media screen and (max-width: 1370px) {
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Macondo', cursive;
+        
+    }
+  }
+
+
+
+  
+  @media(max-width: 1242px) {
+    .title{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align:end;
+        height: 100vh;
+        background-image:url(/Images/home.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        font-family: 'Macondo', cursive;
+        
+    }
+  }
